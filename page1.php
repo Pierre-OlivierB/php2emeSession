@@ -18,7 +18,7 @@ $_SESSION["nom"] = 'Olivier';
 echo 'Bonjour ',$_SESSION["nom"],'<br/>'; 
 echo 'session_id() = ', session_id(),'<br/>'; 
 ?>
-<a href="page2.php">Page 2</a><br/> 
+<a href="page2s.php">Page 2</a><br/> 
         </div> 
     </body> 
 </html>
