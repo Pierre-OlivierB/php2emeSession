@@ -1,21 +1,24 @@
 <?php 
 // Ouvrir/réactiver la session. 
 session_start(); 
-// Enregistrer deux informations dans la session. 
-$_SESSION['prenom'] = 'Olivier'; 
-$_SESSION['informations'] =  // c’est un tableau... 
-      array('prenom'=>'Olivier','nom'=>'TOM'); 
+// Enregistrer une information dans la session. 
+$_SESSION["nom"] = 'Olivier'; 
 ?> 
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset="utf-8" />  
-    <title>Page 1</title> 
-  <head>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
-    <title>Page 1</title>
-  </head> 
-  <body> 
-    <div><a href="page2s.php">Page 2</a></div> 
-  </body> 
+<!DOCTYPE html>  
+    <html>  
+        <head> 
+             
+             <meta charset="utf-8"/> 
+             <title>Page 1</title>
+       </head> 
+       <body> 
+           <div> 
+               <b>Page 1</b><br/> 
+<?php  
+echo 'Bonjour ',$_SESSION["nom"],'<br/>'; 
+echo 'session_id() = ', session_id(),'<br/>'; 
+?>
+<a href="page2.php">Page 2</a><br/> 
+        </div> 
+    </body> 
 </html>
